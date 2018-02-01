@@ -1,0 +1,138 @@
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#wrapper-main {
+	font-family: Helvetica, Arial, sans-serif;
+	background: url(../img/workstation.jpg) no-repeat center center fixed;
+	height: 100%;
+	width: 100%;
+	color: #666699;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	background-size: cover;
+}
+
+#wrapper {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666699;
+	background-color: #f0f0fs;
+	height: 100%;
+	width: 100%;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	background-size: cover;
+}
+
+#navbar {
+	position: absolute;
+	height: 50px;
+	width: 700px;
+	top: 0px;
+	left: 50%;
+	transform: translate(-45%, 0%);
+}
+
+#namebox {
+	text-align: center;
+	height: 200px;
+	width: 700px;
+	padding: 10px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-55%, -50%);
+}
+
+#namebox h1 {
+	font-size: 50px;
+}
+
+#namebox h3 {
+	font-size: 25px;
+}
+
+#navbar li a {
+	float: left;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666699;
+}
+
+#navbar li a:hover {
+	box-shadow: 0px 2px 2px black;
+}
+
+#navbar li a:visited {
+	color: #666699;
+}
+
+#textbox {
+	position: absolute;
+	top: 150px;
+	left: 20%;
+	width: 60%;
+	height: 60%;
+}
+
+#textbox h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#resumebox {
+	position: relative;
+	top: 50px;
+
+}
+
+p {
+	font-size: 25px;
+	line-height: 1.6;
+}
+
+embed {
+	 width: 100%;
+	 height: 960px;
+}
+
+#logobar {
+	text-align: center;
+}
+
+.logos {
+	padding: 20px;
+}
+
+#portfolio {
+	position: relative;
+	width: 960px;
+	top: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.portfoliobox {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin: 20px 40px;
+	height: 400px;
+	width: 400px;
+}
+
+.portfoliobox img {
+	height: 300px;
+	width: 400px;
+	border: solid 2px black;
+	border-radius: 25px;
+}
+
+.portfoliobox img:hover {
+	box-shadow: 0px 3px 3px black;
