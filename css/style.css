@@ -136,3 +136,8 @@ embed {
 
 .portfoliobox img:hover {
 	box-shadow: 0px 3px 3px black;
+}
+
+.portfoliobox p {
+	font-size: 20px;
+}
