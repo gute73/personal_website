@@ -4,9 +4,7 @@ html, body {
 }
 
 #wrapper-main {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+	position: relative;
 	font-family: Helvetica, Arial, sans-serif;
 	background: url(../img/workstation.jpg) no-repeat center center fixed;
 	height: 100%;
@@ -19,9 +17,7 @@ html, body {
 }
 
 #wrapper {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+	position: relative;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666699;
 	background-color: #c9d2e0;
@@ -30,10 +26,9 @@ html, body {
 }
 
 #navbar {
-	position: absolute;
+	position: relative;
 	height: 50px;
 	width: 700px;
-	top: 0px;
 	left: 50%;
 	transform: translate(-45%, 0%);
 }
@@ -75,12 +70,12 @@ html, body {
 }
 
 #textbox {
-	position: absolute;
+	position: relative;
 	display: block;
-	top: 100px;
+	margin: 50px 0px;
 	left: 20%;
 	width: 60%;
-	height: 60%;
+
 }
 
 #textbox h1 {
@@ -90,10 +85,8 @@ html, body {
 
 #resumebox {
 	position: relative;
-	top: 50px;
 	height: 100%;
 	width: 100%;
-
 }
 
 p {
@@ -117,8 +110,8 @@ embed {
 #portfolio {
 	position: relative;
 	display: block;
-	width: 960px;
-	top: 30%; 
+	clear: both;
+	width: 960px; 
 	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto;
