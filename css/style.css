@@ -1,6 +1,5 @@
 html, body {
 	height: 100%;
-	width: 100%;
 }
 
 #wrapper-main {
@@ -8,6 +7,7 @@ html, body {
 	font-family: Helvetica, Arial, sans-serif;
 	background: url(../img/workstation.jpg) no-repeat center center fixed;
 	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	color: #666699;
 	-webkit-background-size: cover;
@@ -22,7 +22,9 @@ html, body {
 	color: #666699;
 	background-color: #c9d2e0;
 	height: 100%;
+	min-height: 100%;
 	width: 100%;
+	overflow: auto;
 }
 
 #navbar {
@@ -30,7 +32,7 @@ html, body {
 	height: 50px;
 	width: 700px;
 	left: 50%;
-	transform: translate(-45%, 0%);
+	transform: translate(-43%, 0%);
 }
 
 #namebox {
@@ -41,7 +43,7 @@ html, body {
 	position: absolute;
 	top: 40%;
 	left: 50%;
-	transform: translate(-55%, -50%);
+	transform: translate(-53%, -50%);
 }
 
 #namebox h1 {
