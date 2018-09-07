@@ -20,7 +20,8 @@ html, body {
 	position: relative;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666699;
-	background-color: #c9d2e0;
+	background: url(../img/workstation.jpg) no-repeat center center fixed;
+/*	background-color: #c9d2e0;*/
 	height: 100%;
 	min-height: 100%;
 	width: 100%;
@@ -33,6 +34,7 @@ html, body {
 	width: 700px;
 	left: 50%;
 	transform: translate(-43%, 0%);
+	margin: 0px 0px 50px 0px;
 }
 
 #namebox {
@@ -71,13 +73,18 @@ html, body {
 	color: #666699;
 }
 
-#textbox {
-	position: relative;
-	display: block;
-	margin: 50px 0px;
-	left: 20%;
+#content {
+	padding: 50px;
+	margin: auto;
 	width: 60%;
+	min-height: 90%;
+	background-color: #ffffff;
+	color: #000000;
+	overflow: auto;
+}
 
+#textbox {
+	width: 100%;
 }
 
 #textbox h1 {
@@ -86,7 +93,6 @@ html, body {
 }
 
 #resumebox {
-	position: relative;
 	height: 100%;
 	width: 100%;
 }
@@ -115,8 +121,7 @@ embed {
 	clear: both;
 	width: 960px; 
 	margin-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 .portfoliobox {
@@ -149,4 +154,20 @@ embed {
 	font-size: 25px;
 	padding: 20px;
 	color: #ffffff;
+}
+
+@media only screen and (max-width: 950px) {
+	#portfolio {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.portfoliobox {
+		width: 90%;
+		margin: auto;
+	}
+
+	.portfoliobox img {
+		width: 100%;
+	}
 }
