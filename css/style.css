@@ -1,10 +1,15 @@
 /* universal */
 
-* {
-
+html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html, body {
@@ -15,41 +20,30 @@ html, body {
 	font-size: 16px;
 }
 
-#wrapper-main {
+#wrapper-main, #wrapper {
 	position: relative;
 	background: url(../img/workstation.jpg) no-repeat center center fixed;
 	height: 100%;
 	min-height: 100%;
 	width: 100%;
 	color: #000;
-/*	color: #666699; */
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
 	background-size: cover;
-}
-
-#wrapper {
-	position: relative;
-	color: #000;
-/*	color: #666699; */
-	background: url(../img/workstation.jpg) no-repeat center center fixed;
-/*	background-color: #c9d2e0;*/
-	height: 100%;
-	min-height: 100%;
-	width: 100%;
-	overflow: auto;
+  overflow: auto;
 }
 
 #namebox {
-	position: absolute;
+  position: absolute;
 	text-align: center;
+  top: 35%;
+  left: 50%;
+  transform: translate(-51%);
 	height: 200px;
 	width: 700px;
 	padding: 10px;
-	top: 40%;
-	left: 50%;
-	transform: translate(-52%, -50%);
+	margin: 0px;
 }
 
 #namebox h1 {
@@ -62,8 +56,8 @@ html, body {
 }
 
 #content {
-	padding: 50px;
-	margin: auto;
+	padding: 50px 50px 200px 50px;
+	margin: 0 auto;
 	width: 70%;
 	min-height: 85%;
 	background-color: #fff;
@@ -108,12 +102,10 @@ p {
 	display: block;
 	clear: both;
 	width: 100%; 
-	margin: auto;
 }
 
 .portfolioframe {
 	display: inline-block;
-	float: left;
 	width: 50%;
 	margin: 30px 0 30px 0;
 }
@@ -156,14 +148,15 @@ p {
 nav {
 	position: relative;
 	height: 50px;
-	width: 700px;
-	left: 50%;
-	transform: translate(-45%, 0%);
-	margin: 0px 0px 10px 0px;
+	margin: 0px auto 10px auto;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
 }
 
 nav li a {
-	float: left;
 	padding: 10px 20px;
 	text-decoration: none;
 	font-size: 24px;
@@ -177,6 +170,10 @@ nav li a:hover {
 
 nav li a:visited {
 	color: #000;
+}
+
+.navbox {
+  display: none;
 }
 
 /* forms */
@@ -224,7 +221,7 @@ button, input, textarea {
 
 	.portfolioframe {
 		width: 90%;
-		margin: 20px auto 20px auto;
+		margin: 50px auto;
 		display: block;
 		clear: both;
 	}
@@ -244,9 +241,9 @@ button, input, textarea {
 	}
 
 	#content {
-		width: 90%;
-		max-width: 100%;
-	}
+		width: 100%;
+    padding: 50px 100px 200px 100px;
+	}  
 
 }
 
@@ -258,21 +255,23 @@ button, input, textarea {
 	}
 
 	#namebox h1 {
-		font-size: 60px;
+		font-size: 68px;
 	}
 
 	#namebox h3 {
-		font-size: 48px;
+		font-size: 34px;
 	}
 
 	p {
-		font-size: 40px;
+		font-size: 36px;
 	}
 
+  #textbox h1 {
+    font-size: 48px;
+  }
+
 	nav {
-		width: 800px;
 		max-width: 100%;
-		transform: translate(-50%, 0%);
 	}
 
 	nav li a {
@@ -283,6 +282,86 @@ button, input, textarea {
 		width: 50%;
 	}
 
+  .navbar {
+    display: none;
+  }
+
+  .navbox {
+    display: block;
+    float: right;
+    width: 152px;
+    height: 102px;
+    border: 6px solid #000;
+    margin: 20px 30px 10px 0px;
+    padding: 16px 10px;
+    border-radius: 10px;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  nav li {
+    display: block;
+    clear: both;
+    padding: 10px 0px;
+    border-top: 1px solid #000;
+    color: #fff;
+    background-color: #445166;
+  }
+
+  nav ul {
+    border-bottom: 1px solid #000;
+  }
+
+  .bar-one {
+    height: 10px;
+    width: 120px;
+    border-radius: 6px;
+    background-color: #000;
+  }
+
+  .bar-two, .bar-three {
+    height: 10px;
+    border-radius: 6px;
+    background-color: #000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .bar-two {
+    width: 70px;
+    margin: 14px 0px;
+  }
+
+  .bar-three {
+    width: 100px;
+  }
+
+  .navbox:hover div {
+    width: 120px;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+
+  nav li a {
+    font-size: 22px;
+  }
+
+  #namebox h1 {
+    font-size: 48px;
+  }
+
+  #namebox h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 750px) {

@@ -14,4 +14,18 @@ $(document).ready( function() {
     $(this).find('.folioimg').show();
 	});
 
+  $(document).on('click touchstart', '.navbox', function() {
+    var b_color = $(this).css('background-color');
+    if (b_color == 'rgb(12, 81, 33)') {
+      $(this).css('background-color', 'transparent');
+      $(this).children('div.bar-two').css('width', '70px');
+      $(this).children('div.bar-three').css('width', '100px');
+    } else {
+      $(this).css('background-color', 'rgb(12, 81, 33)');
+      $(this).children('div').css('width', '120px');
+    }
+    $('.navbar').toggle();
+    $('#namebox').toggle();
+  });
+
 });
